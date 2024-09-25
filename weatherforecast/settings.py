@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-1#@2t5&=d*&l*8typcjd15nb+m-)mi%$sjr)#ocf-5kg-z+@87
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
 
 
 # Application definition
@@ -142,3 +142,6 @@ WEATHER_API_KEY = os.getenv('WEATHER_API_KEY')
 REDIS_HOST = os.getenv('REDIS_HOST')
 REDIS_PORT = os.getenv('REDIS_PORT')
 REDIS_PASSWORD = os.getenv('REDIS_PASSWORD')
+
+STATICFILES_DIRS = [BASE_DIR/'static',]
+STATIC_ROOT = BASE_DIR/'staticfiles'
