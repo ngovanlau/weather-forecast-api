@@ -25,7 +25,13 @@ SECRET_KEY = "django-insecure-1#@2t5&=d*&l*8typcjd15nb+m-)mi%$sjr)#ocf-5kg-z+@87
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
+ALLOWED_HOSTS = [
+    'https://weather-forecast-api-mu.vercel.app/',
+    'localhost',
+    '127.0.0.1',
+    '.vercel.app',
+    '.now.sh'
+]
 
 
 # Application definition
